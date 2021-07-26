@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> ADMIN LOGIN </title>
+        <link rel="stylesheet" type="text/css" href="../CSS/loginpage.css"/>
+        
+        <script type="text/javascript">
+
+            function validate(){
+                  
+                  var username = document.getElementById("username").value;
+                  var password = document.getElementById("password").value;
+        
+            if (( username =="admin") && (password == "admin")){
+                        alert('Logged in Successfully');
+                    }
+                    else{
+                        alert('invalid user name or password');
+                    }
+                    }
+            </script>
+    </head>
+    <body>
+            <div class="logo">
+               
+                <img src="../Images/download.png"  title="SVR Logo"  height="150px" width="200px">
+           
+            </div>
+
+            <div class="top">
+             
+                <div>
+                  Contact Us +91 98426 9192* / 01 | svr@hospital.com 
+                </div>
+
+            </div>
+
+            <div class="links">
+                <div>
+                        <nav>
+                        <ul>
+                            <li><a href="Firstpage.html">REGISTER/LOGIN</a></li>
+                            <li><a href="loginpage.html">HOME</a></li>
+                            <li><a href="Aboutus.html">ABOUT US</a></li>
+                            <li><a href="service.html">SERVICE</a></li>
+                            <li> <a href="Doctors.html">DOCTORS</a> </li>
+                            <li><a href="Contact.html">CONTACT US</a></li>
+                        </ul>
+                        </nav> 
+                </div>
+            </div>
+
+<form id="myform">
+    <div class="center">
+      <h1>Login</h1>
+      <form method="post">
+        <div class="txt_field">
+          <input type="text" id="username" placeholder="Username"  required>
+        </div>
+        <div class="txt_field">
+          <input type="password" id="password" placeholder="Password" required>  
+        </div>
+        <div class="pass">
+            <a href="#">Forgot Password?</a>
+        </div>
+        <input type="submit" value="Login" onclick="return validate()">
+        </div>
+    </div>
+</form>
+
+    <footer>
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script>, SVR Hospital</p>
+    </footer>>
+
+
+  </body>
+</html>
